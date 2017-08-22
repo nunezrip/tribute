@@ -19,7 +19,7 @@ img {
 /*******************************************
 Heading
 *******************************************/
-div {
+div.accolade {
 width: 1000px;
 padding: 10px;
 border: 5px solid #292828;
@@ -55,20 +55,42 @@ h3 {
     font-weight: bold;
 }
 
-div.container1 {
+
+div.accomplishments {
         width: 1000px;
         padding: 10px;
-        border: 5px solid gray;
+        border: none;
         display: block;
         margin-left: auto;
         margin-right: auto;
         font-size: 30px;
         background-color: #088383;
-        color: white
-    }
-
+        color: white  
+}
 
 /*******************************************
-Margings/Padding
+Form
 *******************************************/
+form {
+    font-size: 3em;
+}
+.left,
+.right {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+}
 
+@media (min-width: 768px) {
+    .left,
+    .right {
+        width: 48%;
+    }
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 20px;
+    padding: 8px;
+}
